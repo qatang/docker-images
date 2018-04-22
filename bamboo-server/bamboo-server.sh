@@ -13,7 +13,7 @@ BAMBOO_DIR=/opt/atlassian-bamboo-$BAMBOO_VERSION
 if [ -d $BAMBOO_DIR ]; then
   echo "-> Bamboo $BAMBOO_VERSION already found at $BAMBOO_DIR. Skipping download."
 else
-  BAMBOO_TARBALL_URL=http://downloads.atlassian.com/software/bamboo/downloads/atlassian-bamboo-$BAMBOO_VERSION.tar.gz
+  BAMBOO_TARBALL_URL=https://product-downloads.atlassian.com/software/bamboo/downloads/atlassian-bamboo-$BAMBOO_VERSION.tar.gz
   echo "-> Downloading Bamboo $BAMBOO_VERSION from $BAMBOO_TARBALL_URL ..."
   wget --progress=dot:mega $BAMBOO_TARBALL_URL -O /tmp/atlassian-bamboo.tar.gz
   echo "-> Extracting to $BAMBOO_DIR ..."
